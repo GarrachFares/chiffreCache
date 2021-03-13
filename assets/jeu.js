@@ -1,5 +1,5 @@
 
-while(confirm("vouler vous lancer le jeu ?")){
+do{
     var niveau = parseInt(prompt("donner le niveau du jeu" , 5) ) ;
     while(isNaN(niveau) || niveau <= 0){
         niveau = parseInt(prompt("donner le niveau du jeu" , 5) ) ;
@@ -22,4 +22,4 @@ while(confirm("vouler vous lancer le jeu ?")){
         alert("vous aver perdu ! la reponse est " + nbr) ;
     }
     
-}
+}while(confirm("vouler vous lancer le jeu ?")) ;
