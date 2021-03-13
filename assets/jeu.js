@@ -1,7 +1,7 @@
 
 do{
     var niveau = Math.abs(parseInt(prompt("donner le niveau du jeu" , 5) )) ;
-    while(isNaN(niveau)){
+    while(isNaN(niveau) || niveau == 0){
         niveau =  Math.abs(parseInt(prompt("donner le niveau du jeu" , 5) )) ;
     }
     var nbr = Math.ceil(Math.random() * 10) ;
