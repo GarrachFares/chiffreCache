@@ -1,8 +1,8 @@
 
 do{
-    var niveau = parseInt(prompt("donner le niveau du jeu" , 5) ) ;
-    while(isNaN(niveau) || niveau <= 0){
-        niveau = parseInt(prompt("donner le niveau du jeu" , 5) ) ;
+    var niveau = Math.abs(parseInt(prompt("donner le niveau du jeu" , 5) )) ;
+    while(isNaN(niveau)){
+        niveau =  Math.abs(parseInt(prompt("donner le niveau du jeu" , 5) )) ;
     }
     var nbr = Math.ceil(Math.random() * 10) ;
     var ch = "" ;
@@ -22,4 +22,4 @@ do{
         alert("vous aver perdu ! la reponse est " + nbr) ;
     }
     
-}while(confirm("vouler vous lancer le jeu ?")) ;
+}while(confirm("vouler vous relancer le jeu ?")) ;
